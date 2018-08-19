@@ -10,19 +10,16 @@ using System.Windows.Forms;
 
 namespace Borealis
 {
-    public partial class MainForm : Form
+    public partial class Help : Form
     {
-        private Help helpForm;
-
-        public MainForm()
+        public Help()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void helpOk_Click(object sender, EventArgs e)
         {
-            helpForm = new Help();
-            helpForm.Show();
+            Close();
         }
     }
 }
