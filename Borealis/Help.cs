@@ -17,9 +17,6 @@ namespace Borealis
             InitializeComponent();
         }
 
-        private void helpOk_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void HelpOk_Click(object sender, EventArgs e) => Close();
     }
 }

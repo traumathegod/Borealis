@@ -151,7 +151,7 @@
             this.helpOk.TabIndex = 15;
             this.helpOk.Text = "Ok";
             this.helpOk.UseVisualStyleBackColor = true;
-            this.helpOk.Click += new System.EventHandler(this.helpOk_Click);
+            this.helpOk.Click += new System.EventHandler(this.HelpOk_Click);
             // 
             // Help
             // 
