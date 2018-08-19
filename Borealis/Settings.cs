@@ -38,6 +38,7 @@ namespace Borealis
             Properties.Settings.Default["UserName"] = UserTextBox.Text.Trim();
             //Properties.Settings.Default["Password"] = PasswordTextBox.Text.Trim();
             Properties.Settings.Default.Save();
+            Close();
         }
     }
 }

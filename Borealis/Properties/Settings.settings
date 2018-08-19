@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Hostname" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">localhost</Value>
     </Setting>
     <Setting Name="Port" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">22</Value>

@@ -34,7 +34,7 @@
             this.UserTextBox = new System.Windows.Forms.TextBox();
             this.HostnameTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.settingsOk = new System.Windows.Forms.Button();
+            this.settingsCancel = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
             this.Port = new System.Windows.Forms.Label();
             this.PortNumericUD = new System.Windows.Forms.NumericUpDown();
@@ -90,19 +90,19 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Password";
             // 
-            // settingsOk
+            // settingsCancel
             // 
-            this.settingsOk.Location = new System.Drawing.Point(12, 187);
-            this.settingsOk.Name = "settingsOk";
-            this.settingsOk.Size = new System.Drawing.Size(75, 23);
-            this.settingsOk.TabIndex = 13;
-            this.settingsOk.Text = "Ok";
-            this.settingsOk.UseVisualStyleBackColor = true;
-            this.settingsOk.Click += new System.EventHandler(this.SettingsOk_Click);
+            this.settingsCancel.Location = new System.Drawing.Point(317, 189);
+            this.settingsCancel.Name = "settingsCancel";
+            this.settingsCancel.Size = new System.Drawing.Size(75, 23);
+            this.settingsCancel.TabIndex = 13;
+            this.settingsCancel.Text = "Cancel";
+            this.settingsCancel.UseVisualStyleBackColor = true;
+            this.settingsCancel.Click += new System.EventHandler(this.SettingsOk_Click);
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(287, 187);
+            this.SaveButton.Location = new System.Drawing.Point(12, 189);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 14;
@@ -149,7 +149,7 @@
             this.Controls.Add(this.PortNumericUD);
             this.Controls.Add(this.Port);
             this.Controls.Add(this.SaveButton);
-            this.Controls.Add(this.settingsOk);
+            this.Controls.Add(this.settingsCancel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -171,7 +171,7 @@
         private System.Windows.Forms.TextBox UserTextBox;
         private System.Windows.Forms.TextBox HostnameTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button settingsOk;
+        private System.Windows.Forms.Button settingsCancel;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Label Port;
         private System.Windows.Forms.NumericUpDown PortNumericUD;
