@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Borealis", "Borealis\Borealis.csproj", "{0BD069AD-F211-4E1A-91DB-802C9FD52BE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BD069AD-F211-4E1A-91DB-802C9FD52BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD069AD-F211-4E1A-91DB-802C9FD52BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD069AD-F211-4E1A-91DB-802C9FD52BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD069AD-F211-4E1A-91DB-802C9FD52BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F3CD45E-B013-475D-B417-9825CCD76DDC}
+	EndGlobalSection
+EndGlobal
