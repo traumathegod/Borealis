@@ -36,8 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.settingsOk = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.PortTextBox = new System.Windows.Forms.TextBox();
             this.Port = new System.Windows.Forms.Label();
+            this.PortNumericUD = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.PortNumericUD)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -62,6 +63,7 @@
             // 
             this.PasswordTextBox.Location = new System.Drawing.Point(12, 141);
             this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PasswordChar = '*';
             this.PasswordTextBox.Size = new System.Drawing.Size(301, 20);
             this.PasswordTextBox.TabIndex = 8;
             // 
@@ -108,13 +110,6 @@
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // PortTextBox
-            // 
-            this.PortTextBox.Location = new System.Drawing.Point(319, 25);
-            this.PortTextBox.Name = "PortTextBox";
-            this.PortTextBox.Size = new System.Drawing.Size(48, 20);
-            this.PortTextBox.TabIndex = 15;
-            // 
             // Port
             // 
             this.Port.AutoSize = true;
@@ -124,13 +119,35 @@
             this.Port.TabIndex = 16;
             this.Port.Text = "Port";
             // 
+            // PortNumericUD
+            // 
+            this.PortNumericUD.Location = new System.Drawing.Point(319, 26);
+            this.PortNumericUD.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.PortNumericUD.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.PortNumericUD.Name = "PortNumericUD";
+            this.PortNumericUD.Size = new System.Drawing.Size(72, 20);
+            this.PortNumericUD.TabIndex = 17;
+            this.PortNumericUD.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 224);
+            this.ClientSize = new System.Drawing.Size(404, 224);
+            this.Controls.Add(this.PortNumericUD);
             this.Controls.Add(this.Port);
-            this.Controls.Add(this.PortTextBox);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.settingsOk);
             this.Controls.Add(this.label3);
@@ -141,6 +158,7 @@
             this.Controls.Add(this.HostnameTextBox);
             this.Name = "Settings";
             this.Text = "Settings";
+            ((System.ComponentModel.ISupportInitialize)(this.PortNumericUD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,7 +173,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button settingsOk;
         private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.TextBox PortTextBox;
         private System.Windows.Forms.Label Port;
+        private System.Windows.Forms.NumericUpDown PortNumericUD;
     }
 }

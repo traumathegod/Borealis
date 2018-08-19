@@ -18,7 +18,7 @@ namespace Borealis
             try
             {
                 HostnameTextBox.Text = Properties.Settings.Default["Hostname"].ToString();
-                PortTextBox.Text = Properties.Settings.Default["Port"].ToString();
+                PortNumericUD.Value = (decimal)Properties.Settings.Default["Port"];
                 UserTextBox.Text = Properties.Settings.Default["UserName"].ToString();
                 PasswordTextBox.Text = Properties.Settings.Default["Password"].ToString();
             }
@@ -33,11 +33,11 @@ namespace Borealis
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            //Properties.Settings.Default["Hostname"] = HostnameTextBox.Text.Trim();
-            //Properties.Settings.Default["Port"] = PortTextBox.Text.Trim();
-            //Properties.Settings.Default["UserName"] = UserTextBox.Text.Trim();
+            Properties.Settings.Default["Hostname"] = HostnameTextBox.Text.Trim();
+            Properties.Settings.Default["Port"] = PortNumericUD.Value;
+            Properties.Settings.Default["UserName"] = UserTextBox.Text.Trim();
             //Properties.Settings.Default["Password"] = PasswordTextBox.Text.Trim();
-            //Properties.Settings.Default.Save();
+            Properties.Settings.Default.Save();
         }
     }
 }
