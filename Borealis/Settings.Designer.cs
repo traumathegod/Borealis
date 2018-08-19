@@ -30,10 +30,8 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.UserTextBox = new System.Windows.Forms.TextBox();
             this.HostnameTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.settingsCancel = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
             this.Port = new System.Windows.Forms.Label();
@@ -59,19 +57,11 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Hostname";
             // 
-            // PasswordTextBox
-            // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(12, 141);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.PasswordChar = '*';
-            this.PasswordTextBox.Size = new System.Drawing.Size(301, 20);
-            this.PasswordTextBox.TabIndex = 8;
-            // 
             // UserTextBox
             // 
             this.UserTextBox.Location = new System.Drawing.Point(12, 83);
             this.UserTextBox.Name = "UserTextBox";
-            this.UserTextBox.Size = new System.Drawing.Size(301, 20);
+            this.UserTextBox.Size = new System.Drawing.Size(380, 20);
             this.UserTextBox.TabIndex = 7;
             // 
             // HostnameTextBox
@@ -81,18 +71,9 @@
             this.HostnameTextBox.Size = new System.Drawing.Size(301, 20);
             this.HostnameTextBox.TabIndex = 6;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Password";
-            // 
             // settingsCancel
             // 
-            this.settingsCancel.Location = new System.Drawing.Point(317, 189);
+            this.settingsCancel.Location = new System.Drawing.Point(317, 109);
             this.settingsCancel.Name = "settingsCancel";
             this.settingsCancel.Size = new System.Drawing.Size(75, 23);
             this.settingsCancel.TabIndex = 13;
@@ -102,7 +83,7 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(12, 189);
+            this.SaveButton.Location = new System.Drawing.Point(12, 109);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 14;
@@ -121,7 +102,7 @@
             // 
             // PortNumericUD
             // 
-            this.PortNumericUD.Location = new System.Drawing.Point(319, 26);
+            this.PortNumericUD.Location = new System.Drawing.Point(320, 26);
             this.PortNumericUD.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -145,15 +126,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 224);
+            this.ClientSize = new System.Drawing.Size(404, 152);
             this.Controls.Add(this.PortNumericUD);
             this.Controls.Add(this.Port);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.settingsCancel);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.UserTextBox);
             this.Controls.Add(this.HostnameTextBox);
             this.Name = "Settings";
@@ -167,10 +146,8 @@
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.TextBox UserTextBox;
         private System.Windows.Forms.TextBox HostnameTextBox;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button settingsCancel;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Label Port;

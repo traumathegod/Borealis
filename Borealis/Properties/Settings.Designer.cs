@@ -58,17 +58,5 @@ namespace Borealis.Properties {
                 this["UserName"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public byte Password {
-            get {
-                return ((byte)(this["Password"]));
-            }
-            set {
-                this["Password"] = value;
-            }
-        }
     }
 }
