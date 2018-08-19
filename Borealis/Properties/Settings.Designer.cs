@@ -58,5 +58,29 @@ namespace Borealis.Properties {
                 this["UserName"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double version {
+            get {
+                return ((double)(this["version"]));
+            }
+            set {
+                this["version"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IsFirstBoot {
+            get {
+                return ((bool)(this["IsFirstBoot"]));
+            }
+            set {
+                this["IsFirstBoot"] = value;
+            }
+        }
     }
 }

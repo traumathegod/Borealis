@@ -29,6 +29,7 @@ namespace Borealis
             Properties.Settings.Default["Hostname"] = HostnameTextBox.Text.Trim();
             Properties.Settings.Default["Port"] = PortNumericUD.Value;
             Properties.Settings.Default["UserName"] = UserTextBox.Text.Trim();
+            Properties.Settings.Default["IsFirstBoot"] = true;
             Properties.Settings.Default.Save();
             Close();
         }
